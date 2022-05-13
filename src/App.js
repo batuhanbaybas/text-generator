@@ -10,7 +10,7 @@ import { Body } from './Components/Body/Body';
 
 function App() {
   const [paragraphs, setParagraphs] = useState(1);
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState("text");
 
   const { data, loading, error } = useFetchData(`https://baconipsum.com/api/?type=all-meat&paras=${paragraphs}}&format=${selected}`);
 
